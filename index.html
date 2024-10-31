@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu de Refeições</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho com Botões das Refeições -->
+  <header class="header">
+    <div class="menu-buttons">
+      <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBMs8s1YsTCaxFSEbFovAd4ZwuQNXBmPKzzVRjOMzotcKOmO3w1xAeQOH6h2jnwtEl_OwSgJMpXiqF_4E8BR3hO-3x5DveVzeiWVtMKPJAY00iI=w929-h917" alt="">
+      <button onclick="navigateTo('almoco.html')">Almoço</button>
+      <button onclick="navigateTo('sobremesas.html')">Sobremesas</button>
+      <button onclick="navigateTo('bebidas.html')">Bebidas</button>
+      <button onclick="navigateTo('jantas.html')">Jantar</button>
+    </div>
+    <!-- Botão de Login -->
+    <div class="login">
+      <button onclick="openLoginModal()">Login</button>
+    </div>
+  </header>
+
+  <!-- Container Principal -->
+  <div class="main-container">
+    <div class="ads ads-left">
+      <p>Anúncio 1</p>
+    </div>
+
+    <div class="content">
+      <h2>Exemplos de Pratos</h2>
+      <div class="items">
+        <div class="item">
+          <img src="almoco1.jpg" alt="Prato de Almoço 1">
+          <p>Frango Grelhado com Legumes</p>
+        </div>
+        <div class="item">
+          <img src="sobremesa1.jpg" alt="Sobremesa 1">
+          <p>Pudim de Leite</p>
+        </div>
+        <div class="item">
+          <img src="data:image/jpeg;base64,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" alt="Bebida 1">
+          <p>Suco de Laranja</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ads ads-right">
+      <p>Anúncio 2</p>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>Sobre Nós</p>
+    <p>Contatos</p>
+    <p>Termos de Serviço</p>
+  </footer>
+
+  <!-- Modal de Login/Registro -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeLoginModal()">&times;</span>
+      <h2 id="modalTitle">Login</h2>
+      <form id="loginForm">
+        <!-- Campos de Registro -->
+        <div id="registerFields">
+          <input type="text" placeholder="Nome" required>
+          <input type="email" placeholder="Email" required>
+          <input type="date" placeholder="Data de Nascimento" required>
+          <input type="password" placeholder="Senha" required>
+          <input type="password" placeholder="Confirme a Senha" required>
+        </div>
+
+        <!-- Campos de Login -->
+        <div id="loginFields">
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Senha" required>
+        </div>
+
+        <!-- Verificação de Captcha e Botões -->
+        <div class="captcha">
+          <input type="checkbox" required> Eu não sou um robô
+        </div>
+        
+        <button type="submit" class="submit-button">Entrar</button>
+        
+        <p id="toggleFormText">Não tem uma conta? <a href="#" onclick="toggleForm()">Registrar-se</a></p>
+
+        <!-- Login com Google -->
+        <div class="google-login">
+          <button onclick="loginWithGoogle()">Entrar com Google</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

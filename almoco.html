@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Almoço - Menu de Refeições</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="header">
+    <h1>Opções de Almoço</h1>
+    <button onclick="window.location.href='index.html'">Voltar ao Menu</button>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <div class="menu-container">
+    <div class="meal-options">
+      <h2>Escolha seu Prato:</h2>
+
+      <!-- Prato: Strogonoff de Carne -->
+      <div class="meal-item">
+        <img src="https://th.bing.com/th/id/OIP.LJTn1EdAWyabmd2EdzQEhAHaJr?w=138&h=181&c=7&r=0&o=5&pid=1.7" alt="Strogonoff de Carne">
+        <h3>Strogonoff de Carne</h3>
+        <p>Carne em cubos, creme de leite, molho de tomate e champignon.</p>
+        <p><strong>Preço: R$ 35,90</strong></p>
+        <label><input type="checkbox"> Retirar champignon</label>
+        <label><input type="checkbox"> Retirar molho de tomate</label>
+      </div>
+
+      <!-- Prato: Bife à Milanesa -->
+      <div class="meal-item">
+        <img src="https://th.bing.com/th?id=OSK.ee697da8e92fb647fe89a5243f67c8f5&w=220&h=123&rs=2&qlt=80&o=6&cdv=1&pid=16.1" alt="Bife à Milanesa">
+        <h3>Bife à Milanesa</h3>
+        <p>Bife empanado, arroz e batata frita.</p>
+        <p><strong>Preço: R$ 35,90</strong></p>
+        <label><input type="checkbox"> Retirar arroz</label>
+        <label><input type="checkbox"> Retirar batata frita</label>
+      </div>
+
+      <!-- Prato: Almôndegas -->
+      <div class="meal-item">
+        <img src="https://th.bing.com/th?id=OSK.HEROBCf7QoDhc-0kOiZkRr91YD6gESkS0SUymC1MCG_fAoE&w=472&h=280&c=13&rs=2&o=6&pid=SANGAM" alt="Almôndegas">
+        <h3>Almôndegas</h3>
+        <p>Carne moída temperada e frita, acompanhada de molho de tomate.</p>
+        <p><strong>Preço: R$ 35,90</strong></p>
+        <label><input type="checkbox"> Retirar molho de tomate</label>
+      </div>
+
+      <!-- Prato: Carne Assada -->
+      <div class="meal-item">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEACwsLCwvLDI3NzJFS0JLRWZeVlZeZptvd293b5vrk6yTk6yT69D8zb/N/ND///////////////////////////8BLCwsLC8sMjc3MkVLQktFZl5WVl5mm293b3dvm+uTrJOTrJPr0PzNv8380P/////////////////////////////CABEIAHsA3AMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAABAgMABAX/2gAIAQEAAAAA6RxK52nnGcCdMqqAFA6s1VyKGRkuGmpwUABV9BhtEOs54guC4wXAIO5mnPM3ICNnB23RuPMAO/Iq0EMV2O6+ZRiuzqo9ASV35yMhDdbxgqrmBZV9HnV7LBaFUF+0ctOVJFhmVe2N2pGeKZk9JYHaPLmGw1n6mHOXExr25KtIafMwDKOqbM1RXn6IpabiXRHcqsNgvqQjaXQ5j1JJ8JttCJK4KPaEua6yvWqpkCkRmpKDKvuKKca3ZKtGarkZExCBQPbYY7nW9ZIk5kZUYKoUb3C2G2RNS7GPPOElyYLt7poufIck4W9MFIcnHJABj//EABgBAAMBAQAAAAAAAAAAAAAAAAABAgME/9oACgICEAMQAAAAWi0GQ8wKcgtFQCEtRVi85tUDmbvNpWqEtq5nM2qExA2nIls4VVjCWoxuRDCoAtNyRjKKt202AVIila0rCc8kIL0uk2nIK2lsSDzUSnVNNyAFOZ6GGYyiXiAMQqBr/8QAKxAAAgICAQMCBwACAwAAAAAAAAECEQMhEhAxQSJRBBMgMmFxgVLBM5Gx/9oACAEBAAE/AIZYvUYyb/ETJkyQ24V+2Tz5Z65UvwY4LyedHEZbSslNEE8jq9+CME732/I/lp/dJ/hEcilLjTQ015GSSla7nbvde4nX+mW3e+nYdfQzv0WTJ/nIacvdkYV36NDVLuOWv9s3+v8A0kkktGOO3yMrXJSRHJSaFufK/Ipq/UieSCdIUU+zJNJPdCafsxLsb7KrZprb6bX0OuicS/Y/nTnxJN3tb/xEvL7iRPW7I5HFdyVPyRpF+zLbaKaTdUc5JJ2Ld+fcZGVknG6bHC0lukOGVdtnL30K/DKob6u2Ki7JTS15G2tb5fsSoSL9iT5SbOyFsaov/o/Im35HdMhJIbvsN0tdMD78vBlzJqkSIq73s9a0chu+jI8e7ZKVfsbpeJOQkRROVEm3pCsrptiTbGlR50cFDBk5EarsT4eERa41fkchy7bZfTtvyujQ1Rr3KvZKoqxXFc3Ztu33YojdIfqf4OJLW0cZcU/fsO+x4H48idpmLHVSZlTnFxToeCEV3bJp5HcI9jhKNeLHGhdfJEuh0UX7aJTTldaPud1SEiMG+yMqae1RdKXu2K2Vro6ZxGoJLvfkw4+c78IfhI0iTeR8UOoLS7E3KSs8bFrohidSGaH+DM0tRd2JObUUcK0hREu/6Jyk6TYkrrxYld8VbQ23sdtG7VJl67kVzkokUoQSouvNmXI6pGGDim2TdtRvyZexPGoRuxp9ES7FPT+iTucv3RinwlYpY33kcsSX3Dkn2Jxe5exwUoN2YLxbfkyyUZaS34SFjk1bHb9tFOml5MONJNtEnSsyZJPSMEW/WzLkUYmKN+t/wzS2opCird78GWWuiGPo10zYmnzj/UJpov3Fuxt64sV1TMalFXxJNaaMqUuK8tkI32Mn3O0Q4y3sbaXskOdohiX3Si79iebVKJCLnK39qMk1HZjjyfzGKW578Em31kP9/Tkw75QE7dPTPlack0U07IzSjsqM0u6fdMinNR7GWG4tPd0JLgPEpPZHG8d7vZVr1NfpC1apUx34bIw5O2cpXUEj5Tk7yP8AhklxjS9iLrFd9/oe2jd9GWOO9Gv2ZMSyd+/hlZcW2rj7inDJ9zHhk02k0jsmmjHSgq1JEMUZKV+3pRwkqRKGr2XbruShatDdUOXYTWyEoR2Oc5L0oabl63om12Euq23o8jH0W9dXOLXa/ePglg8wdCnOGpqhThKNKKQ8KUU+S/hxypNxkL4lxhuD5DzxtOJCU4KVP0kZzgqZJpt0NltCHKVVY277j6t0hNU7s/Jf0d1fnyUUUNKSprRL4dLcJUKeTG/VD+ojnU6VnDHOlFtseC9DwyScUShOqY4yXhnkbYh2PqyXR/StFe3VJtpJW+iJ4Mc98aIwz47WPJ/GLPlx6cJIx/Ewl5ixSUnbTRwhJ6Y8MW9wi0S+FxO/S0P4ReJkvhZ91OJLBkXgcZLwWyxsv6V08SX66r/iX7MySkteOi7olro4QldxTM0VhUHjuJ8LnyzlUpDSE9jSpnGLj2FFfLh+jLFE0h/X/8QAHREAAgICAwEAAAAAAAAAAAAAAAEQEQIgEiEwQf/aAAgBAgEBPwC0XFFFiaOiinulD0+lnTUVKUN7qbEoybTXk4RY2y6L6UXooemWFjxaPiLZj2V58EcBY+t6Vr//xAAhEQACAgICAgMBAAAAAAAAAAAAAQIRECESMQMgEzJhUf/aAAgBAwEBPwD42Lxxo0u9j8lfUcpS7ZTGpLaZzmKf4KafZd9FHf4jSE2+9Mkkt2Tm5YRY22iv6JKirZtMUm3T2OSQqe2STa7olK8KPreusPCpq2Siifk5JJZj17W8xdIq92TTUneGWzm0lRy0mxPk/R4gMcU0SjQ0NYtkC/WP1G6HKuiUOW2VF6JQaKKI6Lw89YVUJ2TfEg+SNdEoIrN4Q8f/2Q==" alt="Carne Assada">
+        <h3>Carne Assada</h3>
+        <p>Carne assada lentamente, servida com legumes variados.</p>
+        <p><strong>Preço: R$ 35,90</strong></p>
+        <label><input type="checkbox"> Retirar legumes</label>
+      </div>
+
+      <!-- Prato: Espetinho -->
+      <div class="meal-item">
+        <img src="https://th.bing.com/th?id=OSK.8ddb07c87d713c9fd70a62f5e6ba8a61&w=197&h=118&c=7&rs=2&qlt=80&o=6&cdv=1&pid=16.1" alt="Espetinho">
+        <h3>Espetinho</h3>
+        <p>Carne em espetos, acompanhada de farofa e vinagrete.</p>
+        <p><strong>Preço: R$ 35,90</strong></p>
+        <label><input type="checkbox"> Retirar farofa</label>
+        <label><input type="checkbox"> Retirar vinagrete</label>
+      </div>
+
+      <!-- Prato: Rocambole de Carne -->
+      <div class="meal-item">
+        <img src="https://th.bing.com/th?id=OSK.ff2c4c7349a764b6fbd2303a8dd33356&w=220&h=157&rs=2&qlt=80&o=6&cdv=1&pid=16.1" alt="Rocambole de Carne">
+        <h3>Rocambole de Carne</h3>
+        <p>Rocambole de carne moída recheado com queijo e presunto.</p>
+        <p><strong>Preço: R$ 35,90</strong></p>
+        <label><input type="checkbox"> Retirar queijo</label>
+        <label><input type="checkbox"> Retirar presunto</label>
+      </div>
+
+      <!-- Prato: Carne de Panela com Abóbora -->
+      <div class="meal-item">
+        <img src="https://th.bing.com/th/id/OIP.pg3fiUyWLD2_6dUdn7-bUAHaEm?w=298&h=185&c=7&r=0&o=5&pid=1.7" alt="Carne de Panela com Abóbora">
+        <h3>Carne de Panela com Abóbora</h3>
+        <p>Carne cozida com abóbora e temperos variados.</p>
+        <p><strong>Preço: R$ 35,90</strong></p>
+        <label><input type="checkbox"> Retirar abóbora</label>
+      </div>
+
+      <!-- Prato: Fricassê de Carne -->
+      <div class="meal-item">
+        <img src="https://th.bing.com/th/id/OIP.C6-HhAdlts6eRsFtqKi8qwHaEK?w=268&h=180&c=7&r=0&o=5&pid=1.7" alt="Fricassê de Carne">
+        <h3>Fricassê de Carne</h3>
+        <p>Carne desfiada com milho, creme de leite e batata palha.</p>
+        <p><strong>Preço: R$ 35,90</strong></p>
+        <label><input type="checkbox"> Retirar milho</label>
+        <label><input type="checkbox"> Retirar batata palha</label>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
